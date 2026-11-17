@@ -1,6 +1,11 @@
 # EasyPDM for SolidCraft
 
-Work in progress for EasyPDM 0.9.
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="136">](https://buymeacoffee.com/easypdm)
+
+Upload, Download, Log in and Log out for [SolidCraft](https://github.com/tangency-labs/solidcraft), against an
+[EasyPDM](https://github.com/pawelcel/EasyPDM) server — a small, self-hosted PDM. Needs EasyPDM
+0.9 or later. Until 0.9 this lived in the EasyPDM repository (`EasyPDM.SolidCraft/` and
+`EasyPDM.Companion/`); its history came along.
 
 SolidCraft plugins are WebAssembly components with **no network access** (SolidCraft's plugin
 RFC reserves it for signed plugins from a future curated index; EasyPDM asked for a path for
@@ -16,7 +21,7 @@ self-hosted servers in tangency-labs/solidcraft#17343). So the integration has t
   revision as SolidCraft's own part number and revision. The plugin reads only that file, and
   only until the design knows its item: SolidCraft voids a whole plugin call when one of its
   reads fails, even one the plugin handles, so it never asks for a file that may not exist.
-- **[`EasyPDM.Companion`](../EasyPDM.Companion/)** — a small EasyPDM program on the same
+- **[`companion/`](companion/)** — the EasyPDM SolidCraft companion, a small EasyPDM program on the same
   computer (`easypdm-companion login | logout | status | process | watch`). It picks requests
   up and uploads them the way the FreeCAD and SolidWorks macros do: a design already linked to
   an item goes to it (a released item gets a new revision only with a comment), otherwise the

@@ -1,0 +1,30 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: "10.0.x"
+      - name: Companion builds
+        run: dotnet build companion -c Release -warnaserror
+      - name: Plugin builds
+        run: |
+          rustup target add wasm32-unknown-unknown
+          curl -sSfL https://github.com/bytecodealliance/wasm-tools/releases/download/v1.263.0/wasm-tools-1.263.0-x86_64-linux.tar.gz \
+            | tar -xz -C "$RUNNER_TEMP"
+          export PATH="$RUNNER_TEMP/wasm-tools-1.263.0-x86_64-linux:$PATH"
+          plugin/build.sh
+      - name: Versions agree
+        run: |
+          P=$(python3 -c "import json; print(json.load(open('plugin/plugin.json'))['version'])")
+          C=$(grep -oP '^version = "\K[^"]+' plugin/Cargo.toml)
+          N=$(grep -oP '(?<=<Version>)[^<]+' companion/EasyPDM.Companion.csproj)
+          echo "plugin.json $P, Cargo.toml $C, companion $N"
+          [ "$P" = "$C" ] && [ "$P" = "$N" ] || { echo "::error::Versions differ"; exit 1; }

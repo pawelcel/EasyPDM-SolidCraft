@@ -1,7 +1,7 @@
 # EasyPDM companion
 
 A small program on a CAD workstation that does the network part for CAD integrations that
-cannot reach the EasyPDM server themselves — today [SolidCraft](../EasyPDM.SolidCraft/),
+cannot reach the EasyPDM server themselves — today [SolidCraft](../README.md),
 whose plugins have no network access.
 
 ```
@@ -38,4 +38,4 @@ one self-contained program (no .NET to install) with the SolidCraft plugin packa
 which `setup-solidcraft` picks up by itself. Installing step by step:
 [SolidCraft](https://github.com/pawelcel/EasyPDM/wiki/SolidCraft) on the wiki.
 
-Build: `dotnet build EasyPDM.Companion` (.NET 10, no other dependencies).
+Build: `dotnet build companion` (.NET 10, no other dependencies).
