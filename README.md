@@ -7,6 +7,11 @@ Upload, Download, Log in and Log out for [SolidCraft](https://github.com/tangenc
 0.9 or later. Until 0.9 this lived in the EasyPDM repository (`EasyPDM.SolidCraft/` and
 `EasyPDM.Companion/`); its history came along.
 
+![SolidCraft's Plugins menu with EasyPDM's Upload, Download, Log in and Log out](https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugins-menu.png)
+
+**Installing step by step, with screenshots: [SolidCraft](https://github.com/pawelcel/EasyPDM/wiki/SolidCraft) on the EasyPDM wiki.**
+Downloads: the companion zip for Windows or Linux from the [latest release](https://github.com/pawelcel/EasyPDM-SolidCraft/releases).
+
 SolidCraft plugins are WebAssembly components with **no network access** (SolidCraft's plugin
 RFC reserves it for signed plugins from a future curated index; EasyPDM asked for a path for
 self-hosted servers in tangency-labs/solidcraft#17343). So the integration has two parts:
