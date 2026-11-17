@@ -24,7 +24,7 @@ easypdm-companion status | logout | process | download
 - **Outbox**: `Documents/EasyPDM/outbox` (the language-specific Documents folder; the SolidCraft
   Flatpak sees only that folder). Each request is processed once; its files then move to
   `outbox/done` and its outcome is written as `<id>.result.json`.
-- **Uploads** follow the FreeCAD and SolidWorks macros: linked designs go to their item, new
+- **Uploads** follow the FreeCAD add-on and the SolidWorks macros: linked designs go to their item, new
   ones are created or picked in the browser through the macros' ticket flow, a released item
   gets a new revision only with a comment. The preview and the mass come from `solidcraft-cli`
   (the Flatpak on Linux, `Program Files\SolidCraft` on Windows; `--solidcraft-cli PATH` to
