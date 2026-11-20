@@ -2,6 +2,8 @@
 
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="136">](https://buymeacoffee.com/easypdm)
 
+[![Release](https://img.shields.io/github/v/release/pawelcel/EasyPDM-SolidCraft?label=release)](https://github.com/pawelcel/EasyPDM-SolidCraft/releases/latest) [![License: MIT](https://img.shields.io/github/license/pawelcel/EasyPDM-SolidCraft)](LICENSE) [![Tests](https://img.shields.io/github/actions/workflow/status/pawelcel/EasyPDM-SolidCraft/check.yml?branch=main&label=tests)](https://github.com/pawelcel/EasyPDM-SolidCraft/actions/workflows/check.yml) [![Wiki](https://img.shields.io/badge/docs-wiki-blue)](https://github.com/pawelcel/EasyPDM-SolidCraft/wiki)
+
 Upload, Download, Log in and Log out for [SolidCraft](https://github.com/tangency-labs/solidcraft), against an
 [EasyPDM](https://github.com/pawelcel/EasyPDM) server — a small, self-hosted PDM. Needs EasyPDM
 0.9 or later. Until 0.9 this lived in the EasyPDM repository (`EasyPDM.SolidCraft/` and
