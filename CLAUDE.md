@@ -2,7 +2,7 @@
 
 Conventions that are easy to miss. The EasyPDM server and web app live in
 [pawelcel/EasyPDM](https://github.com/pawelcel/EasyPDM), with their own CLAUDE.md; the FreeCAD
-and SolidWorks integrations in pawelcel/EasyPDM-FreeCAD and pawelcel/EasyPDM-SolidWorks.
+and SolidWorks integrations in pawelcel/EasyPDM-FreeCAD-Addon and pawelcel/EasyPDM-SolidWorks-Addon.
 
 ## Layout
 

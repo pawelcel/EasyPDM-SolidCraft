@@ -4,7 +4,7 @@
 
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="136">](https://buymeacoffee.com/easypdm)
 
-[![Release](https://img.shields.io/github/v/release/pawelcel/EasyPDM-SolidCraft?label=release)](https://github.com/pawelcel/EasyPDM-SolidCraft/releases/latest) [![License: MIT](https://img.shields.io/github/license/pawelcel/EasyPDM-SolidCraft)](LICENSE) [![Tests](https://img.shields.io/github/actions/workflow/status/pawelcel/EasyPDM-SolidCraft/check.yml?branch=main&label=tests)](https://github.com/pawelcel/EasyPDM-SolidCraft/actions/workflows/check.yml) [![Wiki](https://img.shields.io/badge/docs-wiki-blue)](https://github.com/pawelcel/EasyPDM-SolidCraft/wiki)
+[![Release](https://img.shields.io/github/v/release/pawelcel/EasyPDM-SolidCraft-Addon?label=release)](https://github.com/pawelcel/EasyPDM-SolidCraft-Addon/releases/latest) [![License: MIT](https://img.shields.io/github/license/pawelcel/EasyPDM-SolidCraft-Addon)](LICENSE) [![Tests](https://img.shields.io/github/actions/workflow/status/pawelcel/EasyPDM-SolidCraft-Addon/check.yml?branch=main&label=tests)](https://github.com/pawelcel/EasyPDM-SolidCraft-Addon/actions/workflows/check.yml) [![Wiki](https://img.shields.io/badge/docs-wiki-blue)](https://github.com/pawelcel/EasyPDM-SolidCraft-Addon/wiki)
 
 Upload, Download, Log in and Log out for [SolidCraft](https://github.com/tangency-labs/solidcraft), against an
 [EasyPDM](https://github.com/pawelcel/EasyPDM) server — a small, self-hosted PDM. Needs EasyPDM
@@ -14,7 +14,7 @@ Upload, Download, Log in and Log out for [SolidCraft](https://github.com/tangenc
 ![SolidCraft's Plugins menu with EasyPDM's Upload, Download, Log in and Log out](https://raw.githubusercontent.com/wiki/pawelcel/EasyPDM/images/solidcraft-plugins-menu.png)
 
 **Installing step by step, with screenshots: [SolidCraft](https://github.com/pawelcel/EasyPDM/wiki/SolidCraft) on the EasyPDM wiki.**
-Downloads: the companion zip for Windows or Linux from the [latest release](https://github.com/pawelcel/EasyPDM-SolidCraft/releases).
+Downloads: the companion zip for Windows or Linux from the [latest release](https://github.com/pawelcel/EasyPDM-SolidCraft-Addon/releases).
 
 SolidCraft plugins are WebAssembly components with **no network access** (SolidCraft's plugin
 RFC reserves it for signed plugins from a future curated index; EasyPDM asked for a path for
